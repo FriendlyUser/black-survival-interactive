@@ -54,7 +54,7 @@ RUN dotnet_sdk_version=5.0.102 \
 
 # Copy notebooks
 
-COPY ./notebooks/ ${HOME}/notebooks/
+COPY . ${HOME}/
 
 # Add package sources
 RUN echo "\
@@ -98,4 +98,4 @@ RUN dotnet interactive jupyter install
 ENV DOTNET_INTERACTIVE_CLI_TELEMETRY_OPTOUT=false
 
 # Set root to notebooks
-WORKDIR ${HOME}/notebooks/
+WORKDIR ${HOME}
