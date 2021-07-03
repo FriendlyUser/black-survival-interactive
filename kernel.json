@@ -1,0 +1,16 @@
+{
+    "language": "C#",
+    "argv": [
+        "dotnet",
+        "interactive",
+        "jupyter",
+        "--default-kernel",
+        "csharp",
+        "--http-port-range",
+        "1000-3000",
+        "{connection_file}"
+      ],
+
+      "display_name": ".NET (C#)",
+    "env": {"BSER_APIKEY":"CwlA1TUWrr9ErxlPYlrie1wPbxE4wTJT9lmNfVlo"}
+   }
